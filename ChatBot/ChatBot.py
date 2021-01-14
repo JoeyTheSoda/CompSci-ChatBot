@@ -1,7 +1,10 @@
 import discord
 
 class MyClient(discord.Client):
-    print("hello.")
+
+    async def on_ready(self):
+        
+        print("Logged on as", self.user)
 
 client = MyClient()
-client.run("NjYxMjkzNjM0NTk4OTkzOTQ2.XgpVbw.Cmn88jgf7rTsbajvZclXRgLOwI4")
+client.run("Nzk4OTY0MjE3NDYxMzQyMjcw.X_8raQ.aGRIb2hNX9iRRFoQPDH7FrUA-h4")
