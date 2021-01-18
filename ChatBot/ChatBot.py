@@ -9,6 +9,9 @@ class MyClient(discord.Client):
        
     async def on_message(self, message):
         
+        if message.author == self.user: #don't react to own messages
+            return
+        
         await message.add_reaction(":thumbsup:")
 
 client = MyClient()
