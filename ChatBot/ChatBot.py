@@ -15,4 +15,4 @@ class MyClient(discord.Client):
         await message.add_reaction(":thumbsup:")
 
 client = MyClient()
-client.run("Nzk4OTY0MjE3NDYxMzQyMjcw.X_8raQ.aGRIb2hNX9iRRFoQPDH7FrUA-h4")
+client.run(token)
