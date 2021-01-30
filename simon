@@ -1,0 +1,13 @@
+import random
+
+colors = [r, b, g, y]
+pc = []
+user = []
+
+game = True
+
+while game == True:
+  pc.append(random.choice(colors))
+  
+  user.append(input(color))
+
